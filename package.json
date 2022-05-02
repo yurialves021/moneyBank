@@ -12,6 +12,7 @@
   },
   "author": "Yuri Alves",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/yurialves021/moneyBank/issues"
   },
