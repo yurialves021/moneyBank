@@ -26,8 +26,15 @@ export class Conta{
 
 
     saque(valor){
+       let taxa = 1;
+       this._saque(valor,taxa);
+    }
+
+    _saque(valor,taxa){
         if (valor <= 0) return;
-        this._saldoInicial -= valor;
+        const valorSacado = taxa * valor;
+        this._saldoInicial -= valorSacado;
+        
     }
 
     deposito(valor){
