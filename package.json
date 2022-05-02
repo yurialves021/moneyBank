@@ -1,0 +1,19 @@
+{
+  "name": "moneybank",
+  "version": "1.0.0",
+  "description": "Projeto bancario em JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurialves021/moneyBank.git"
+  },
+  "author": "Yuri Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurialves021/moneyBank/issues"
+  },
+  "homepage": "https://github.com/yurialves021/moneyBank#readme"
+}
