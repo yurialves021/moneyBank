@@ -3,10 +3,16 @@ import {Cliente} from "./Cliente.js"
 export class Conta{
 
     constructor (saldoInicial,cliente,agencia){
-        
-        this._saldoInicial = saldoInicial,
-        this._cliente = cliente,
-        this.agencia= agencia
+        if(this.constructor == Conta){
+
+            throw new Error("Você não deveria instanciar um objeto do tipo conta");
+        }
+
+        this._saldoInicial = saldoInicial;
+        this._cliente = cliente;
+        this.agencia= agencia;
+
+       
 
     }
 
