@@ -11,9 +11,6 @@ export class Conta{
         this._saldoInicial = saldoInicial;
         this._cliente = cliente;
         this.agencia= agencia;
-
-       
-
     }
 
     set cliente(novoValor){
@@ -31,9 +28,8 @@ export class Conta{
     }
 
 
-    saque(valor){
-       let taxa = 1;
-       this._saque(valor,taxa);
+    saque(){
+      throw new Error("Este metodo é abstrato!!");
     }
 
     _saque(valor,taxa){

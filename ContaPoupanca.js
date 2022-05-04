@@ -5,4 +5,9 @@ export class ContaPoupanca extends Conta{
         super(saldoInicial,cliente,agencia);
 
     }
+
+    saque(valor) {
+        const taxa = 1.05;
+        this._saque(valor, taxa);
+    }
 }

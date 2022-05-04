@@ -9,7 +9,7 @@ export class ContaCorrente extends Conta {
     }
 
     saque(valor) {
-        let taxa = 1.1;
+        const taxa = 1.1;
         this._saque(valor, taxa);
     }
 }
