@@ -28,18 +28,18 @@ export class Conta{
     }
 
 
-    saque(){
+    sacar(){
       throw new Error("Este metodo é abstrato!!");
     }
 
-    _saque(valor,taxa){
+    _sacar(valor,taxa){
         if (valor <= 0) return;
         const valorSacado = taxa * valor;
         this._saldoInicial -= valorSacado;
         
     }
 
-    deposito(valor){
+    depositar(valor){
         if(valor < 50) return;
         this._saldoInicial += valor;
     }
@@ -48,7 +48,7 @@ export class Conta{
         if(valor < this._saldoInicial) return;
 
         this._saldoInicial -= valor;
-        conta.deposito(valor);
+        conta.depositar(valor);
 
         
     }

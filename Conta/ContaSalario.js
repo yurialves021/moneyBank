@@ -5,9 +5,9 @@ export class ContaSalario extends Conta{
         super(0,cliente,1001)
     }
 
-    saque(valor){
+    sacar(valor){
         const taxa = 1.01;
-        return this._saque(valor,taxa);
+        return this._sacar(valor,taxa);
     }
 
 } 

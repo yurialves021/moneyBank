@@ -8,8 +8,8 @@ export class ContaCorrente extends Conta {
             ContaCorrente.numeroDeContas += 1;
     }
 
-    saque(valor) {
+    sacar(valor) {
         const taxa = 1.1;
-        this._saque(valor, taxa);
+        this._sacar(valor, taxa);
     }
 }
